@@ -18,12 +18,13 @@
 
 <body>
   <!-- SECTION -->
-  <header class="container-fluid bg-warning">
+  <header class="container-fluid bg-warning d-flex justify-content-between">
     <h1>VENDR <span class="mdi mdi-food-apple"></span></h1>
+    <button onclick="app.VendingController.addMoney()" class="btn btn-dark text-light">Add Money</button>
   </header>
   <main>
     <section class="container">
-      <div class="row">
+      <div class="row justify-content-evenly my-4">
         <div class="col-md-3 card border d-flex align-items-center">
           <h3>Tacos</h3>
           <hr>
@@ -36,7 +37,7 @@
       </div>
       <div class="row justify-content-end text-light p-5 rounded">
         <div class="col-md-3 bg-dark">
-          <h4>Money: $0.00</h4>
+          <h4>Money: $<span id="money-count"></span></h4>
         </div>
       </div>
     </section>
